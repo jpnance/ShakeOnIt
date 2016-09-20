@@ -6,4 +6,5 @@ module.exports = function(app) {
 	});
 
 	app.get('/users', users.show);
+	app.post('/users', users.signUp);
 };
