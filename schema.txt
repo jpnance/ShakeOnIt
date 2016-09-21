@@ -1,0 +1,44 @@
+users
+	{
+		username: "jpnance",
+		password: "asoentuhasonteuhaosenth",
+		firstName: "Patrick",
+		lastName: "Nance",
+		email: "jpnance@gmail.com",
+		phoneNumber: "5127365726"
+	}
+
+bets
+	{
+		type: "prop",
+		description: "Most tacos eaten in five minutes."
+		bettors: [ "rkelley", "mnaugle" ],
+		proposedBy: "rkelley"
+	}
+
+	{
+		type: "game-straight",
+		sides: [ "DAL", "WAS" ],
+		bettors: [ "jpnance", "jeff" ],
+		picks: {
+			jpnance: "DAL",
+			jeff: "WAS"
+		},
+		expires: "2016-09-18 18:59:00",
+		status: "AGREED" // [ "PROPOSED", "AGREED", "RESOLVED" ]
+	}
+
+games
+	{
+		type: "NFL",
+		awayTeam: {
+			abbreviation: "DAL",
+			score: 27
+		},
+		homeTeam: {
+			abbreviation: "WAS",
+			score: 23
+		},
+		kickoff: "2016-09-18 19:00:00",
+		status: "F"
+	}
